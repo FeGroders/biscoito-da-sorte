@@ -65,7 +65,6 @@ def respondendo_tweets():
         guarda_ultimo_id_lido(ultimo_id_lido, nome_arquivo)
         if '@biscoitosort' in mention.full_text.lower(): 
             print('Respondendo tweet')
-            api.
             api.update_status('Olá @' + mention.user.screen_name + '! 🥠 Seu biscoito da sorte é: '+ fraseFormatada + '   🍀 Seus números da sorte são: '+ numerosSorteStr, mention.id)
 
 while True:
