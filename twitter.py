@@ -70,5 +70,5 @@ def respondendo_tweets():
 
 while True:
     respondendo_tweets()    
-    time.sleep(15)
+    time.sleep(60)
 
