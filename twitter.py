@@ -6,7 +6,7 @@ import os
 from os import environ
 from random import randint
 
-CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_KEY = environ['CONSUMER_KEY'] #Autenticadores do Twitter
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
 ACCESS_KEY = environ['ACCESS_KEY']
 ACCESS_SECRET = environ['ACCESS_SECRET']
