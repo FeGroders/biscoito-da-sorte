@@ -6,9 +6,9 @@ import os
 from os import environ
 from random import randint
 
-CONSUMER_KEY = environ['API_KEY'] #Autenticadores do Twitter
-CONSUMER_SECRET = environ['API_KEY_SECRET']
-ACCESS_KEY = environ['ACCESS_TOKEN']
+API_KEY = environ['API_KEY'] #Autenticadores do Twitter
+API_KEY_SECRET = environ['API_KEY_SECRET']
+ACCESS_TOKEN = environ['ACCESS_TOKEN']
 ACCESS_SECRET = environ['ACCESS_SECRET']
 
 auth = tweepy.OAuthHandler('API_KEY','API_KEY_SECRET')
