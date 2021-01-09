@@ -6,13 +6,13 @@ import os
 from os import environ
 from random import randint
 
-CONSUMER_KEY = environ['CONSUMER_KEY'] #Autenticadores do Twitter
-CONSUMER_SECRET = environ['CONSUMER_SECRET']
-ACCESS_KEY = environ['ACCESS_KEY']
+CONSUMER_KEY = environ['API_KEY'] #Autenticadores do Twitter
+CONSUMER_SECRET = environ['API_KEY_SECRET']
+ACCESS_KEY = environ['ACCESS_TOKEN']
 ACCESS_SECRET = environ['ACCESS_SECRET']
 
-auth = tweepy.OAuthHandler('CONSUMER_KEY','CONSUMER_SECRET')
-auth.set_access_token('ACCESS_KEY', 'ACCESS_SECRET')
+auth = tweepy.OAuthHandler('API_KEY','API_KEY_SECRET')
+auth.set_access_token('ACCESS_TOKEN', 'ACCESS_SECRET')
 
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 nome_arquivo_frases = 'frases.csv'
