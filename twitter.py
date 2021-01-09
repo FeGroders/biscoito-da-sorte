@@ -11,8 +11,8 @@ API_KEY_SECRET = environ['API_KEY_SECRET']
 ACCESS_TOKEN = environ['ACCESS_TOKEN']
 ACCESS_SECRET = environ['ACCESS_SECRET']
 
-auth = tweepy.OAuthHandler('API_KEY','API_KEY_SECRET')
-auth.set_access_token('ACCESS_TOKEN', 'ACCESS_SECRET')
+auth = tweepy.OAuthHandler(API_KEY, API_KEY_SECRET)
+auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 nome_arquivo_frases = 'frases.csv'
